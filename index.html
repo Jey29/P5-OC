@@ -30,7 +30,7 @@
     />
     <!-- Balises meta Twitter -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="Projet-5-OC" />
+    <meta name="twitter:site" content="P5-OC" />
     <meta name="twitter:title" content="Nina Carducci" />
     <meta
       name="twitter:image"
@@ -161,7 +161,7 @@
       </div>
     </header>
     <main>
-      <div id="about">
+      <div id="about" itemscope itemtype="https://schema.org/Photographer">
         <div class="picture left">
           <img src="./assets/images/nina.webp" alt="photo de Nina" />
         </div>
@@ -261,7 +261,7 @@
           </figure>
         </div>
       </div>
-      <div id="services">
+      <div id="services" itemscope itemtype="https://schema.org/Service">
         <h2 class="title">Mes services</h2>
         <div class="container">
           <div class="service">
@@ -274,7 +274,7 @@
               </p>
             </div>
             <div class="service__price">
-              <h4>350€/demi journée</h4>
+              <h4 itemprop="price">350€/demi journée</h4>
               <span>Matériel, déplacement inclus</span>
             </div>
           </div>
@@ -288,7 +288,7 @@
               </p>
             </div>
             <div class="service__price">
-              <h4>50€/photo</h4>
+              <h4 itemprop="price">50€/photo</h4>
               <span>2 AR par photo</span>
             </div>
           </div>
