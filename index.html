@@ -10,8 +10,14 @@
       name="google-site-verification"
       content="6SS3kLeqpSuMZOT1D-pGy4ngShyRygXyre4A2AlfcFc"
     />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" async />
-    <link rel="stylesheet" href="./assets/style.min.css" async />
+    <link
+      rel="preload"
+      href="./assets/bootstrap/bootstrap.min.css"
+      as="style"
+    />
+    <link rel="preload" href="./assets/style.min.css" as="style" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
     <meta charset="UTF-8" />
     <!-- Balises meta Facebook -->
     <meta property="og:url" content="https://jey29.github.io/P5-OC/" />
@@ -101,12 +107,12 @@
                 src="./assets/images/slider/homme-traverse-le-passage-pieton-xl.webp"
                 alt="Photographie d'un homme d'affaire qui traverse un passage piéton"
                 srcset="
-                  ./assets\images\slider\homme-traverse-le-passage-pieton-xs.webp  650w,
+                  ./assets/images/slider/homme-traverse-le-passage-pieton-xs.webp  650w,
                   ./assets/images/slider/homme-traverse-le-passage-pieton-s.webp  1000w,
                   ./assets/images/slider/homme-traverse-le-passage-pieton-m.webp  1200w,
                   ./assets/images/slider/homme-traverse-le-passage-pieton-l.webp  1400w
                 "
-                sizes="(max-width: 650px) 650w, (max-width: 1000px) 1000w, (max-width: 1200px) 1200w, (max-width: 1400px) 1400w, 1920w"
+                sizes="(max-width: 650px) 650px, (max-width: 1000px) 1000px, (max-width: 1200px) 1200px, (max-width: 1400px) 1400px, 1920px"
                 class="d-block w-100"
               />
             </div>
@@ -120,7 +126,7 @@
                   ./assets/images/slider/foule-concert-m.webp  1200w,
                   ./assets/images/slider/foule-concert-l.webp  1400w
                 "
-                sizes="(max-width: 650px) 650w, (max-width: 1000px) 1000w, (max-width: 1200px) 1200w, (max-width: 1400px) 1400w, 1920w"
+                sizes="(max-width: 650px) 650px, (max-width: 1000px) 1000px, (max-width: 1200px) 1200px, (max-width: 1400px) 1400px, 1920px"
                 class="d-block w-100"
               />
             </div>
@@ -134,7 +140,7 @@
                   ./assets/images/slider/couple-maries-m.webp  1200w,
                   ./assets/images/slider/couple-maries-l.webp  1400w
                 "
-                sizes="(max-width: 650px) 650w, (max-width: 1000px) 1000w, (max-width: 1200px) 1200w, (max-width: 1400px) 1400w, 1920w"
+                sizes="(max-width: 650px) 650px, (max-width: 1000px) 1000px, (max-width: 1200px) 1200px, (max-width: 1400px) 1400px, 1920px"
                 class="d-block w-100"
               />
             </div>
@@ -329,7 +335,7 @@
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
               heures
             </p>
-            <form action="" method="post">
+            <form method="post">
               <label>Nom<input type="text" name="nom" id="nom" /></label>
               <label
                 >Email <input type="email" name="email" id="email"
@@ -355,38 +361,44 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/maugallery.min.js"></script>
+    <script src="./assets/scripts.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Nina Carducci",
+        "knowsAbout": "Nina Carducci, photographe professionnelle, est disponible pour couvrir les moments importants de votre vie en offrant ses services à Bordeaux et en Île-de-France.",
+        "telephone": "+0556677889",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "url": "https://jey29.github.io/P5-OC/",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ]
+      }
+    </script>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-  ></script>
-  <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="./assets/maugallery.min.js"></script>
-  <script src="./assets/scripts.js"></script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Nina Carducci",
-      "knowsAbout": "Nina Carducci, photographe professionnelle, est disponible pour couvrir les moments importants de votre vie en offrant ses services à Bordeaux et en Île-de-France.",
-      "telephone": "+0556677889",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "68 avenue Alsace-Lorraine",
-        "addressLocality": "Bordeaux",
-        "postalCode": "33200",
-        "addressCountry": "FR"
-      },
-      "url": "https://jey29.github.io/P5-OC/",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "10:00",
-          "closes": "19:00"
-        }
-      ]
-    }
-  </script>
 </html>
